@@ -2,3 +2,10 @@
 composer.lock
 *.log
 thinkphp
+app/index/controller/Index.php
+app/index/controller/Index.php
+*.php
+app/index/controller/Index.php
+app/index/controller/Index.php
+*.php
+app/index/controller/Index.php
