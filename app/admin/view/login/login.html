@@ -1,0 +1,55 @@
+{extend name="login_common/base" /} 
+
+{block name="title"} 
+在线预约后台登陆页面 
+{/block} 
+
+{block name="form"}
+<form class="form-horizontal" action="login" method="post">
+    <!-- Email -->
+    <div class="form-group">
+        <label class="control-label col-lg-3" for="inputEmail">账号</label>
+        <div class="col-lg-9">
+            <input type="text" name="email" class="form-control" id="inputEmail" placeholder="请输入账号...">
+        </div>
+    </div>
+    <!-- Password -->
+    <div class="form-group">
+        <label class="control-label col-lg-3" for="inputPassword">密码</label>
+        <div class="col-lg-9">
+            <input type="password" name="password" class="form-control" id="inputPassword" placeholder="请输入密码...">
+        </div>
+    </div>
+    <!--
+    <div class="form-group">
+        <label class="control-label col-lg-3" for="inputPassword">验证码</label>
+        <div>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" placeholder="请输入验证码...">
+            </div>
+            <div class="col-lg-4">
+                <img src="img/yzm.png" style="width:120px;height:35px;" alt="">
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- Remember me checkbox and sign in button -->
+    <!--
+    <div class="form-group">
+        <div class="col-lg-9 col-lg-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> 记住我
+                </label>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="col-lg-9 col-lg-offset-4">
+        <input type="hidden" name="submitted" value="TRUE" />
+        <button type="submit" class="btn btn-danger">登录</button>
+        <button type="reset" class="btn btn-default">重置</button>
+    </div>
+    <br />
+</form>
+{/block}
